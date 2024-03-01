@@ -1,8 +1,8 @@
 package oop;
 
 public class Shop {
-    private double price;
-    private double[] result;
+    private final double price;
+    private final double[] result;
     private double initialWeight;
 
     public Shop(double price) {
