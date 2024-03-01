@@ -7,8 +7,9 @@ public class Shop {
 
     public Shop(double price) {
         this.price = price;
-        result = new double[5];
         initialWeight = 1.2;
+        result = new double[5];
+        getPrices();
     }
 
     private void getPrices() {
