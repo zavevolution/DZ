@@ -9,10 +9,10 @@ public class Shop {
         this.price = price;
         initialWeight = 1.2;
         result = new double[5];
-        getPrices();
+        initPrices();
     }
 
-    private void getPrices() {
+    private void initPrices() {
         int index = 0;
         for (double i = 1.2; i <= 2; i += 0.2) {
             result[index] = price * i;
