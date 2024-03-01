@@ -2,16 +2,14 @@
 // 1.4, . . . , 2 кг конфет.
 
 public class Task {
+
     public static void main(String[] args) {
         double price = 22.50;
         double[] result;
         double initialWeight = 1.2;
 
         result = getPrices(price);
-        for (double val : result) {
-            System.out.printf("%.1fкг. цукерок, коштує %.2fгрн.\n", initialWeight, val);
-            initialWeight += 0.2;
-        }
+        showPrices(result, initialWeight);
     }
 
     public static double[] getPrices(double price) {
@@ -22,5 +20,12 @@ public class Task {
             index++;
         }
         return prices;
+    }
+
+    public static void showPrices(double[] prices, double initialWeight) {
+        for (double val : prices) {
+            System.out.printf("%.1fкг. цукерок, коштує %.2fгрн.\n", initialWeight, val);
+            initialWeight += 0.2;
+        }
     }
 }
