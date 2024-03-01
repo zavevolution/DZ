@@ -9,7 +9,8 @@ public class Task {
 
         result = getPrices(price);
         for (double val : result) {
-            System.out.println(initialWeight + "кг. цукерок, коштує " + val + "грн.");
+            System.out.printf("%.1fкг. цукерок, коштує %.2fгрн.\n", initialWeight, val);
+            initialWeight += 0.2;
         }
     }
 
