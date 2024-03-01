@@ -4,7 +4,7 @@
 public class Task {
 
     public static void main(String[] args) {
-        double price = 22.50;
+        double price = 24.70;
         double[] result;
         double initialWeight = 1.2;
 
@@ -24,7 +24,7 @@ public class Task {
 
     public static void showPrices(double[] prices, double initialWeight) {
         for (double val : prices) {
-            System.out.printf("%.1fкг. цукерок, коштує %.2fгрн.\n", initialWeight, val);
+            System.out.printf("%.1fкг цукерок, коштує %.2fгрн.\n", initialWeight, val);
             initialWeight += 0.2;
         }
     }
