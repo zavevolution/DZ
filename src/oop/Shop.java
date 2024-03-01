@@ -22,7 +22,7 @@ public class Shop {
 
     public void show() {
         for (double val : result) {
-            System.out.printf("%.1fкг. цукерок, коштує %.2fгрн.\n", initialWeight, val);
+            System.out.printf("%.1fкг цукерок, коштує -> %.2fгрн.\n", initialWeight, val);
             initialWeight += 0.2;
         }
     }
